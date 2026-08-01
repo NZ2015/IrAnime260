@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Galerie d'Animes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎌 Ma Galerie d'Animes</h1>
+        <p>Découvrez ma collection personnelle</p>
+    </header>
+
+    <main id="gallery" class="gallery">
+        <!-- Les cartes d'animes seront injectées ici par JavaScript -->
+        <p class="loading">Chargement des animes...</p>
+    </main>
+
+    <footer>
+        <p>Galerie créée avec ♥ — données stockées dans <code>anime.json</code></p>
+    </footer>
+
+    <script>
+        // Chargement des données depuis anime.json
+        fetch('anime.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Impossible de charger anime.json');
+                }
+                return response.json();
+            })
+            .then(data => displayAnimes(data.animes))
+            .catch(error => {
+                document.getElementById('gallery').innerHTML =
+                    `<p class="error">❌ ${error.message}</p>`;
+            });
+
+        // Affichage des animes sous forme de cartes
+        function displayAnimes(animes) {
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = animes.map(anime => `
+                <article class="card">
+                    <div class="card-header">
+                        <span class="badge">${anime.genre}</span>
+                        <span class="rating">⭐ ${anime.note}</span>
+                    </div>
+                    <h2>${anime.titre}</h2>
+                    <p class="meta">
+                        ${anime.studio} · ${anime.annee} · ${anime.episodes} épisodes
+                    </p>
+                    <p class="synopsis">${anime.synopsis}</p>
+                </article>
+            `).join('');
+        }
+    </script>
+</body>
+</html>
