@@ -1,0 +1,58 @@
+{
+    "animes": [
+        {
+            "titre": "Fullmetal Alchemist: Brotherhood",
+            "annee": 2009,
+            "genre": "Action / Aventure",
+            "note": 9.1,
+            "studio": "Bones",
+            "episodes": 64,
+            "synopsis": "Deux frères alchimistes tentent de retrouver leurs corps perdus après une tentative de résurrection interdite."
+        },
+        {
+            "titre": "Attack on Titan",
+            "annee": 2013,
+            "genre": "Action / Dark Fantasy",
+            "note": 8.8,
+            "studio": "Wit Studio",
+            "episodes": 87,
+            "synopsis": "L'humanité se bat pour survivre face aux Titans, des géants dévoreurs d'humains."
+        },
+        {
+            "titre": "Steins;Gate",
+            "annee": 2011,
+            "genre": "Science-Fiction / Thriller",
+            "note": 9.0,
+            "studio": "White Fox",
+            "episodes": 24,
+            "synopsis": "Un scientifique autoproclamé découvre un moyen d'envoyer des messages dans le passé."
+        },
+        {
+            "titre": "Death Note",
+            "annee": 2006,
+            "genre": "Psychologique / Thriller",
+            "note": 8.6,
+            "studio": "Madhouse",
+            "episodes": 37,
+            "synopsis": "Un lycéen trouve un carnet qui lui permet de tuer quiconque dont il écrit le nom."
+        },
+        {
+            "titre": "Your Name",
+            "annee": 2016,
+            "genre": "Romance / Fantastique",
+            "note": 8.4,
+            "studio": "CoMix Wave Films",
+            "episodes": 1,
+            "synopsis": "Deux adolescents échangent leurs corps dans leurs rêves et tentent de se retrouver."
+        },
+        {
+            "titre": "One Punch Man",
+            "annee": 2015,
+            "genre": "Action / Comédie",
+            "note": 8.7,
+            "studio": "Madhouse",
+            "episodes": 12,
+            "synopsis": "Un héros si puissant qu'il terrasse ses ennemis d'un seul coup de poing."
+        }
+    ]
+}
